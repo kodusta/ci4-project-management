@@ -1772,7 +1772,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.css">
 
 <script>
-// ... existing code ...
+
 
 // Isı Haritası
 const heatMapCtx = document.getElementById('heatMapChart').getContext('2d');
@@ -1930,7 +1930,7 @@ new Chart(bubbleCtx, {
         }
     }
 });
-// ... existing code ...
+
 </script>
 
 <!-- Gantt Chart Stilleri -->
@@ -2015,6 +2015,6 @@ new Chart(bubbleCtx, {
 }
 </style>
 
-// ... existing code ...
+
 </script>
 <?= $this->endSection() ?>
