@@ -1,0 +1,1417 @@
+DEBUG - 2025-04-05 04:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 04:24:59 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PaymentModel::getMonthName
+[Method: GET, Route: reports]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Models\PaymentModel.php(184): CodeIgniter\Model->__call('getMonthName', [...])
+ 2 APPPATH\Controllers\Reports.php(310): App\Models\PaymentModel->getCashFlowForecast(2024)
+ 3 APPPATH\Controllers\Reports.php(42): App\Controllers\Reports->getCashFlowForecast('2023')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:25:37 --> ErrorException: Undefined array key "overrun_percentage"
+[Method: GET, Route: reports]
+in APPPATH\Views\reports\index.php on line 582.
+ 1 APPPATH\Views\reports\index.php(582): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "overrun_percentage"', 'C:\\wamp64\\www\\app\\Views\\reports\\index.php', 582)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(48): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:26:12 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: reports]
+in APPPATH\Views\reports\index.php on line 631.
+ 1 APPPATH\Views\reports\index.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\app\\Views\\reports\\index.php', 631)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(48): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:27:39 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: reports]
+in APPPATH\Views\reports\index.php on line 631.
+ 1 APPPATH\Views\reports\index.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\app\\Views\\reports\\index.php', 631)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(48): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:27:41 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: reports]
+in APPPATH\Views\reports\index.php on line 631.
+ 1 APPPATH\Views\reports\index.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\app\\Views\\reports\\index.php', 631)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(48): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:27:42 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: reports]
+in APPPATH\Views\reports\index.php on line 631.
+ 1 APPPATH\Views\reports\index.php(631): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\app\\Views\\reports\\index.php', 631)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/index', [], true)
+ 5 APPPATH\Controllers\Reports.php(48): view('reports/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 04:32:12 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ProjectModel::getDurationAnalysis
+[Method: GET, Route: reports]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Reports.php(48): CodeIgniter\Model->__call('getDurationAnalysis', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 04:32:48 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ProjectModel::getDurationAnalysis
+[Method: GET, Route: reports]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Reports.php(48): CodeIgniter\Model->__call('getDurationAnalysis', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:33:40 --> ArgumentCountError: Too few arguments to function App\Models\ProjectModel::getDelayAnalysis(), 0 passed in C:\wamp64\www\app\Controllers\Reports.php on line 49 and exactly 2 expected
+[Method: GET, Route: reports]
+in APPPATH\Models\ProjectModel.php on line 264.
+ 1 APPPATH\Controllers\Reports.php(49): App\Models\ProjectModel->getDelayAnalysis()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:34:05 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\PaymentModel::getFinancialAnalysis
+[Method: GET, Route: reports]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Reports.php(51): CodeIgniter\Model->__call('getFinancialAnalysis', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 04:40:51 --> mysqli_sql_exception: Unknown column 'estimated_cost' in 'field list' in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `categor...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `categor...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `categor...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `categor...', Array, false)
+#4 C:\wamp64\www\app\Models\ProjectModel.php(986): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\app\Controllers\Reports.php(518): App\Models\ProjectModel->getBudgetOverrunPrediction('2025', '04')
+#6 C:\wamp64\www\app\Controllers\Reports.php(55): App\Controllers\Reports->getPredictiveAnalysis('2025', '04')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:40:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'estimated_cost' in 'field list'
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:
+GROUP BY `category_id`', [...], false)
+ 2 APPPATH\Models\ProjectModel.php(986): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Reports.php(518): App\Models\ProjectModel->getBudgetOverrunPrediction('2025', '04')
+ 4 APPPATH\Controllers\Reports.php(55): App\Controllers\Reports->getPredictiveAnalysis('2025', '04')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:40:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'estimated_cost' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= \'2024-10-01\'
+AND `start_date` <= \'2025-04-30\'
+AND `status` = \'Tamamlandı\'
+GROUP BY `category_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= \'2024-10-01\'
+AND `start_date` <= \'2025-04-30\'
+AND `status` = \'Tamamlandı\'
+GROUP BY `category_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:
+GROUP BY `category_id`', [...], false)
+ 4 APPPATH\Models\ProjectModel.php(986): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Reports.php(518): App\Models\ProjectModel->getBudgetOverrunPrediction('2025', '04')
+ 6 APPPATH\Controllers\Reports.php(55): App\Controllers\Reports->getPredictiveAnalysis('2025', '04')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:40:51 --> [Caused by] mysqli_sql_exception: Unknown column 'estimated_cost' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= \'2024-10-01\'
+AND `start_date` <= \'2025-04-30\'
+AND `status` = \'Tamamlandı\'
+GROUP BY `category_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= \'2024-10-01\'
+AND `start_date` <= \'2025-04-30\'
+AND `status` = \'Tamamlandı\'
+GROUP BY `category_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= \'2024-10-01\'
+AND `start_date` <= \'2025-04-30\'
+AND `status` = \'Tamamlandı\'
+GROUP BY `category_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `category_id`, AVG((total_amount - estimated_cost) / estimated_cost * 100) as avg_overrun_percentage, AVG(total_amount) as avg_total_amount, AVG(estimated_cost) as avg_estimated_cost
+FROM `projects`
+WHERE `start_date` >= :start_date:
+AND `start_date` <= :start_date.1:
+AND `status` = :status:
+GROUP BY `category_id`', [...], false)
+ 5 APPPATH\Models\ProjectModel.php(986): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reports.php(518): App\Models\ProjectModel->getBudgetOverrunPrediction('2025', '04')
+ 7 APPPATH\Controllers\Reports.php(55): App\Controllers\Reports->getPredictiveAnalysis('2025', '04')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 04:46:25 --> Error: Class "Dompdf\Dompdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\Controllers\Reports.php on line 526.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:46:30 --> Error: Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+[Method: GET, Route: reports/exportExcel]
+in APPPATH\Controllers\Reports.php on line 564.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 04:48:21 --> ErrorException: Undefined array key "project_success_rate"
+[Method: GET, Route: reports]
+in APPPATH\Controllers\Reports.php on line 960.
+ 1 APPPATH\Controllers\Reports.php(960): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_success_rate"', 'C:\\wamp64\\www\\app\\Controllers\\Reports.php', 960)
+ 2 APPPATH\Controllers\Reports.php(60): App\Controllers\Reports->getGaugeChartData('2023', '03')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:50:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\wamp64\www\app\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+#6 C:\wamp64\www\app\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:50:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:50:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:50:28 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:51:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\wamp64\www\app\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+#6 C:\wamp64\www\app\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:51:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:51:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:51:03 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND (`end_date` >= ? OR `end_date` IS NULL ) :(end_date >= ? OR `end_date` IS NULL ):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:51:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023-03-01')' at line 4 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\wamp64\www\app\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+#6 C:\wamp64\www\app\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:51:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023-03-01')' at line 4
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= ? OR `end_date` IS NULL :end_date >= ? OR end_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:51:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023-03-01')' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND `end_date` >= ? OR `end_date` IS NULL (\'2023-03-01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND `end_date` >= ? OR `end_date` IS NULL (\'2023-03-01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= ? OR `end_date` IS NULL :end_date >= ? OR end_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:51:44 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023-03-01')' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND `end_date` >= ? OR `end_date` IS NULL (\'2023-03-01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND `end_date` >= ? OR `end_date` IS NULL (\'2023-03-01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND `end_date` >= ? OR `end_date` IS NULL (\'2023-03-01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND `end_date` >= ? OR `end_date` IS NULL :end_date >= ? OR end_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Reports.php(876): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:52:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\wamp64\www\app\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+#6 C:\wamp64\www\app\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:52:36 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:52:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:52:36 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:52:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\wamp64\www\app\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+#6 C:\wamp64\www\app\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+#7 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#8 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#9 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-05 04:52:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 4 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:52:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 6 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:52:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`:end_date` >= ?:
+OR `end_date` IS NULL
+ )' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= \'2023-03-01\'
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `projects`
+WHERE `start_date` <= :start_date:
+AND   (
+`end_date >= ?` `:end_date` >= ?:
+OR `end_date` IS NULL
+ )', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Reports.php(879): CodeIgniter\Model->countAllResults()
+ 7 APPPATH\Controllers\Reports.php(57): App\Controllers\Reports->getProjectHeatMapData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:53:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):' at line 5 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\app\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\app\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+#8 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#9 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#10 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-05 04:53:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):' at line 5
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:53:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:53:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND (YEAR(end_date) >= ? OR `end_date` IS NULL ) :(YEAR(end_date) >= ? OR `end_date` IS NULL ):', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:54:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\app\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\app\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+#8 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#9 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#10 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-05 04:54:09 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:54:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:54:09 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-05 04:54:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\app\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\app\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+#8 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->index()
+#9 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#10 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-05 04:54:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+[Method: GET, Route: reports]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:54:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 04:54:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? OR `end_date` IS NULL ('2023')' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = \'2023\'
+AND MONTH(start_date) <= \'03\'
+AND YEAR(end_date) >= ? OR `end_date` IS NULL (\'2023\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projects`
+WHERE YEAR(start_date) = :YEAR(start_date):
+AND MONTH(start_date) <= :MONTH(start_date):
+AND YEAR(end_date) >= ? OR `end_date` IS NULL :YEAR(end_date) >= ? OR end_date:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Reports.php(902): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Reports.php(58): App\Controllers\Reports->getGanttChartData('2023', '03')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 04:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 04:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-05 05:20:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 6 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `project...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `project...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `project...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `project...', Array, false)
+#4 C:\wamp64\www\app\Models\ProjectModel.php(932): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\app\Controllers\Reports.php(473): App\Models\ProjectModel->getFilteredProjects('2025', '04', NULL, NULL, '')
+#6 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->filter()
+#7 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#8 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-05 05:20:00 --> getFilteredProjects hatası: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 6
+ERROR - 2025-04-05 05:20:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 6 in C:\wamp64\www\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `payment...', 0)
+#1 C:\wamp64\www\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `payment...')
+#2 C:\wamp64\www\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `payment...')
+#3 C:\wamp64\www\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `payment...', Array, false)
+#4 C:\wamp64\www\app\Models\PaymentModel.php(516): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\app\Controllers\Reports.php(476): App\Models\PaymentModel->getFilteredPayments('2025', '04', NULL, NULL)
+#6 C:\wamp64\www\system\CodeIgniter.php(933): App\Controllers\Reports->filter()
+#7 C:\wamp64\www\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+#8 C:\wamp64\www\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\wamp64\www\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-04-05 05:20:00 --> getFilteredPayments hatası: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 6
+DEBUG - 2025-04-05 05:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:21:41 --> Error: Class "Dompdf\Dompdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\Controllers\Reports.php on line 601.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:23:44 --> Error: Class "Dompdf\Cpdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Reports.php(574): Dompdf\Dompdf->__construct(Object(Dompdf\Options))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:23:49 --> Error: Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+[Method: GET, Route: reports/exportExcel]
+in APPPATH\Controllers\Reports.php on line 617.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:23:51 --> Error: Class "Dompdf\Cpdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Reports.php(574): Dompdf\Dompdf->__construct(Object(Dompdf\Options))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:24:42 --> Error: Class "Dompdf\Cpdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Reports.php(577): Dompdf\Dompdf->__construct(Object(Dompdf\Options))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:24:44 --> Error: Class "Dompdf\Cpdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Reports.php(577): Dompdf\Dompdf->__construct(Object(Dompdf\Options))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:24:54 --> Error: Class "Dompdf\Cpdf" not found
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\ThirdParty\dompdf\src\Adapter\CPDF.php on line 177.
+ 1 APPPATH\ThirdParty\dompdf\src\CanvasFactory.php(58): Dompdf\Adapter\CPDF->__construct('letter', 'portrait', Object(Dompdf\Dompdf))
+ 2 APPPATH\ThirdParty\dompdf\src\Dompdf.php(274): Dompdf\CanvasFactory::get_instance(Object(Dompdf\Dompdf), 'letter', 'portrait')
+ 3 APPPATH\Controllers\Reports.php(577): Dompdf\Dompdf->__construct(Object(Dompdf\Options))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:29:38 --> ErrorException: Undefined variable $content
+[Method: GET, Route: reports/exportPDF]
+in APPPATH\Views\reports\pdf_template.php on line 40.
+ 1 APPPATH\Views\reports\pdf_template.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $content', 'C:\\wamp64\\www\\app\\Views\\reports\\pdf_template.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\reports\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('reports/pdf_template', [], true)
+ 5 APPPATH\Controllers\Reports.php(594): view('reports/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportPDF()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:30:24 --> Error: Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+[Method: GET, Route: reports/exportExcel]
+in APPPATH\Controllers\Reports.php on line 629.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Reports->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-05 05:36:24 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ProjectModel::getAllProjects
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Home.php(150): CodeIgniter\Model->__call('getAllProjects', [])
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:36:55 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 155.
+ 1 APPPATH\Controllers\Home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 155)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:37:56 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 155.
+ 1 APPPATH\Controllers\Home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 155)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:38:11 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 155.
+ 1 APPPATH\Controllers\Home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 155)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:38:18 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 155.
+ 1 APPPATH\Controllers\Home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 155)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:38:46 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 155.
+ 1 APPPATH\Controllers\Home.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 155)
+ 2 APPPATH\Controllers\Home.php(40): App\Controllers\Home->getBudgetOverrunAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:19 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 188.
+ 1 APPPATH\Controllers\Home.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 188)
+ 2 APPPATH\Controllers\Home.php(41): App\Controllers\Home->getProfitMarginAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:30 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 188.
+ 1 APPPATH\Controllers\Home.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 188)
+ 2 APPPATH\Controllers\Home.php(41): App\Controllers\Home->getProfitMarginAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:35 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 284)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:39 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 284)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:46 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 284)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:47 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 284)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:48 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 284.
+ 1 APPPATH\Controllers\Home.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 284)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:39:51 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 283.
+ 1 APPPATH\Controllers\Home.php(283): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 283)
+ 2 APPPATH\Controllers\Home.php(43): App\Controllers\Home->getCustomerAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:40:07 --> ErrorException: Undefined array key "estimated_cost"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Home.php on line 352.
+ 1 APPPATH\Controllers\Home.php(352): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estimated_cost"', 'C:\\wamp64\\www\\app\\Controllers\\Home.php', 352)
+ 2 APPPATH\Controllers\Home.php(44): App\Controllers\Home->getPredictiveAnalysis()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-05 05:40:39 --> ErrorException: Undefined array key "project_conversion"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\home\index.php on line 407.
+ 1 APPPATH\Views\home\index.php(407): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project_conversion"', 'C:\\wamp64\\www\\app\\Views\\home\\index.php', 407)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\app\\Views\\home\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/index', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('home/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(57): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-05 05:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-05 05:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
